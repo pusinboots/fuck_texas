@@ -31,18 +31,20 @@ while 1:
     address = next(iter(address_df.sample(n=1).FULL_STREET_NAME)) + " Austin Texas"
 
     driver.get("https://www.defendkidstx.com")
-
+    time.sleep(random.randrange(1,2) + random.random())
     driver.find_element("xpath", OPEN).click()
-
+    time.sleep(random.randrange(1,2) + random.random())
     driver.find_element("xpath", NAME_INPUT).send_keys(name)
+    time.sleep(random.randrange(1,2) + random.random())
     driver.find_element("xpath", EMAIL_INPUT).send_keys(email)
+    time.sleep(random.randrange(1,2) + random.random())
     driver.find_element("xpath", LOCATION_INPUT).send_keys(address)
 
-    time.sleep(5)
-    driver.find_element("xpath", SUBMIT).click()
+    time.sleep(random.randrange(1,5) + random.random())
+    driver.find_element("xpath", SUBMIT).submit()
     time.sleep(5)
 
     driver.find_element("xpath", CLOSE).click()
-    time.sleep(5)
 
-time.sleep(300)
+
+    time.sleep(120)
