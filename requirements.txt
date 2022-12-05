@@ -1,0 +1,4 @@
+names
+pandas
+selenium
+undetected-chromedriver
