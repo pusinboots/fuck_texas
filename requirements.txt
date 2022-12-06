@@ -2,3 +2,5 @@ names
 pandas
 selenium
 undetected-chromedriver
+randomname
+ratelimit
